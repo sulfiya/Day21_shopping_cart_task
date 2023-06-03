@@ -1,0 +1,105 @@
+.shop-homepage {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.item-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Update the grid-template-columns property */
+  gap: 20px;
+}
+.item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.item h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.item button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.item button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+.item-image img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.item-price {
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+}
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 5px;
+}
+
+.shop-in-style {
+  position: relative;
+  height: 200px;
+  font-weight:bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.shop-in-style-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0c0a0a; /* Update with desired background color */
+  opacity: 0.8; /* Update with desired opacity */
+}
+.new-price {
+  font-weight: bold;
+}
+.shop-in-style-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: white; /* Update with desired text color */
+}
+.item-price.sale {
+  text-decoration: line-through;
+  color: #888;
+}
+.sale-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  z-index: 1; /* Ensure the "Sale" tag appears above the image */
+}
